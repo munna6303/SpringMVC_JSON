@@ -3,17 +3,15 @@ package com.model;
 public class Employee {
 	int id;
 	String name;
-	String age;
 	Address addr;
 
 	public Employee() {
 	}
 
-	public Employee(int id, String name, String age, Address addr) {
+	public Employee(int id, String name, Address addr) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.age = age;
 		this.addr = addr;
 	}
 
@@ -39,14 +37,6 @@ public class Employee {
 
 	public void setAddr(Address addr) {
 		this.addr = addr;
-	}
-
-	public String getAge() {
-		return age;
-	}
-
-	public void setAge(String age) {
-		this.age = age;
 	}
 
 }

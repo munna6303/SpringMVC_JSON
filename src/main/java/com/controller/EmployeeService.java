@@ -19,10 +19,9 @@ public class EmployeeService {
 	@RequestMapping(value="/listEmp",method=RequestMethod.GET)
 	private List<Employee> listPersons() 
 	{
-		Address address = new Address("Raheja", "HYD","LB Nager");
 		List<Employee> employees = new ArrayList<Employee>();
-		employees.add(new Employee(100,"AAA","28",address));
-		employees.add(new Employee(101,"BBB","10",address));
+		employees.add(new Employee(100,"Munwar",new Address("Hyderabad")));
+		employees.add(new Employee(101,"Ramesh",new Address("Chennai")));
 		
  		return employees;
 	}
