@@ -1,3 +1,4 @@
 applications:
 - name: SpringMVC_JSON
   path: target\SpringMVC_JSON.war
+  memory: 1024M
